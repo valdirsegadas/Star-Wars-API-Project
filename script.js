@@ -16,6 +16,22 @@ window.onload = async () => {
 
 };
 
+window.print = async () => {
+    try{
+        await loadCharacters(currentPageUrl);
+    } catch(error){
+        console.log(error);
+        alert('Erro ao carregar cards');
+    }
+
+    const nextButton = document.getElementById('next-button')
+    const backButton = document.getElementById('back-button')
+
+    nextButton.addEventListener('click', loadNextPage)
+    backButton.addEventListener('click', loadPreviousPage)
+
+};
+
 async function loadCharacters(url) {
     const mainContent = document.getElementById('main-content')
     mainContent.innerHTML = ''; //Limpar os resultados anteriores

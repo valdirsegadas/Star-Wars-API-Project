@@ -266,11 +266,7 @@ footer{
     }
     
     .character-details{
-        font-family: "Star Wars", sans-serif;
         font-size: 16px;
-        font-weight: lighter;
-        text-align: center;
-        color: gold;
     }
 }
 
@@ -336,11 +332,7 @@ footer{
     }
     
     .character-details{
-        font-family: "Star Wars", sans-serif;
         font-size: 16px;
-        font-weight: lighter;
-        text-align: center;
-        color: gold;
     }
 }
 
@@ -408,17 +400,51 @@ footer{
     }
     
     .character-details{
-        font-family: "Star Wars", sans-serif;
         font-size: 16px;
-        font-weight: lighter;
-        text-align: center;
-        color: gold;
     }
 }
 
 @media print and (color) {
-    * {/*Falta manusear o DOM para gerar o modelo de impressão*/
+    body {
        -webkit-print-color-adjust: exact;
        print-color-adjust: exact;
     }
+
+    .logo-txt{
+        color: #000;
+    }
+    
+    .fa-instagram{
+        color: #000;
+    }
+
+    .fa-facebook-f{
+        color: #000;
+    }
+
+    .fa-github{
+        color: #000;
+    }
+
+    .fa-linkedin-in{
+        color: #000;
+    }
+
+    .footer-social-media{
+        visibility: hidden;
+    }
+
+    .footer-logo{
+        color: #000;
+    }
+    
+    .copyrigth{
+        color: #000;
+    }
+
+    .modal-content{
+        width: 55vw;
+        height: 55vh;
+    }
+
  }
